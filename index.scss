@@ -1,0 +1,59 @@
+$h1-color: crimson;
+$body-background-color: bisque;
+
+body {
+    background-color: $body-background-color;
+  }
+
+h1 {
+    color: $h1-color;
+    text-align: center;
+}
+
+/* index.html */
+a {
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: max-content;
+}
+
+.element {
+    text-align: center;
+    height:150;
+    min-width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+    color: darkslateblue;
+    border: 1px solid black;
+    background-color: chartreuse;
+    margin-bottom: 50px;
+}
+
+.element:hover {
+    background-color: red;
+}
+
+
+@media (max-width: 480px) {
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
+/* grid.html */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+}
+
+.grid-container-element {
+    background-color: blueviolet;
+    text-align: center;
+}
